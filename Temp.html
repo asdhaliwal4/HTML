@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <title>Temperature Converter</title>
+
+    <style>
+        h1 {
+            text-align: center;
+          }
+          </style>
+          </head>
+    
+        <body style="background-color:lightslategray;">  
+        <h1 style="color:white;">Temperature Converter</h1> 
+        </style>
+       
+    <a href="Measurement Converter.html">
+        <img src="homebutton.png" alt="Scale" width="100" height="100"> </a>
+
+        <br>
+<div class="container">
+    <div class="row">
+
+        <form>
+          <div class="form-group">
+            <input id="CInput" type="number" class="form-control form-control-lg" placeholder="Enter Celsius ...">
+          </div>
+        </form> 
+        <div id="output">
+              <h4>Fahrenheit:</h4>
+              <div id="FOutput"></div>
+            </div>
+          </div>
+              <h4>Kelvin:</h4>
+              <div id="KOutput"></div>
+            </div>
+          </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>        
+
+  <script>
+   
+document.getElementById("CInput").addEventListener("input", function(e){
+
+  let C = e.target.value;
+  document.getElementById("FOutput").innerHTML = (C * 9/5) + 32;
+  document.getElementById("KOutput").innerHTML = C + 273.15;
+
+});
+
+  </script>
+</html>

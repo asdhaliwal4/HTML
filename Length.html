@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <title>Lenght Converter</title>
+
+    <style>
+        h1 {
+            text-align: center;
+          }
+          </style>
+          </head>
+    
+        <body style="background-color:lightslategray;">  
+        <h1 style="color:white;">Length Converter</h1> 
+        </style>
+       
+    <a href="Measurement Converter.html">
+        <img src="homebutton.png" alt="Scale" width="100" height="100"> </a>
+
+
+
+
+<br>
+<div class="container">
+    <div class="row">
+
+        <form>
+          <div class="form-group">
+            <input id="cmInput" type="number" class="form-control form-control-lg" placeholder="Enter centimetres ...">
+          </div>
+        </form> 
+        <div id="output">
+
+              <h4>Inches:</h4>
+              <div id="inchesOutput"></div>
+            </div>
+          </div>
+
+              <h4>Metres:</h4>
+              <div id="mOutput"></div>
+            </div>
+          </div>
+  
+
+              <h4>Kilometre:</h4>
+              <div id="kmOutput"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>        
+
+  <script>
+   
+document.getElementById("cmInput").addEventListener("input", function(e){
+
+  let cm = e.target.value;
+  document.getElementById("inchesOutput").innerHTML = cm / 2.54;
+  document.getElementById("mOutput").innerHTML = cm / 100;
+  document.getElementById("kmOutput").innerHTML = cm / 100000;
+});
+
+  </script>
+</html>
